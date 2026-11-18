@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мастер на выезде в Калининграде — ремонт и настройка компьютеров, ТВ, роутеров</title>
+<meta name="description" content="Выездной мастер в Калининграде: ремонт и настройка компьютеров, ноутбуков, телевизоров, роутеров, принтеров. Приезжаем в день обращения, цену называем до начала работ. От 1 000 ₽.">
+<meta property="og:title" content="Мастер на выезде в Калининграде">
+<meta property="og:description" content="Компьютеры, ноутбуки, ТВ, роутеры, принтеры. Приезжаем в день обращения, цену называем до начала работ.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e2230'/%3E%3Cpath d='M4 22 Q16 6 28 22' fill='none' stroke='%23f4a81d' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='23' r='2.6' fill='%23f4a81d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300..800&family=Unbounded:wght@500..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <a class="logo" href="#top" aria-label="Мастер на выезде, Калининград">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0e2230"/><path d="M4 22 Q16 6 28 22" fill="none" stroke="#f4a81d" stroke-width="3.5" stroke-linecap="round"/><circle cx="16" cy="23" r="2.6" fill="#f4a81d"/></svg>
+    <span>Мастер на выезде<small>Калининград</small></span>
+  </a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#day" data-roll>Как проходит день</a>
+    <a href="#calc" data-roll>Цена</a>
+    <a href="#devices" data-roll>Что чиним</a>
+    <a href="#faq" data-roll>Вопросы</a>
+  </nav>
+  <a class="btn btn--sm" href="#order" data-magnetic>Вызвать мастера</a>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__text">
+    <h1 data-wave data-wave-min="560" data-wave-max="800">Мастер приедет в день обращения</h1>
+    <p class="hero__lead">Ремонт и настройка компьютеров, ноутбуков, телевизоров, роутеров и принтеров у вас дома или в офисе по Калининграду. Цену называем до начала работ.</p>
+    <div class="hero__cta">
+      <a class="btn" href="#order" data-magnetic>Вызвать мастера</a>
+      <a class="btn btn--ghost" href="#calc" data-magnetic>Посчитать цену</a>
+    </div>
+    <p class="hero__note">Диагностика и мелкий ремонт — от 1 000 ₽. Выезд бесплатный, если продолжаем работу.</p>
+  </div>
+
+  <aside class="ticket" id="ticket" aria-label="Пример наряда на выезд">
+    <div class="ticket__top">
+      <b>Наряд на выезд</b>
+      <span id="tNo">№ 0412</span>
+    </div>
+    <dl class="ticket__rows">
+      <div><dt>Где</dt><dd>Калининград, к вам домой или в офис</dd></div>
+      <div><dt>Жалоба</dt><dd id="tComplaint">Ноутбук тормозит и шумит</dd></div>
+      <div><dt>Делаем</dt><dd id="tFix">Чистка от пыли и замена термопасты</dd></div>
+      <div class="ticket__sum"><dt>Цена</dt><dd><span id="tPrice">от 1 500 ₽</span></dd></div>
+    </dl>
+    <div class="stamp" id="stamp" aria-hidden="true"><span>Выезд<br>сегодня</span></div>
+    <div class="ticket__dots" id="tDots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+  </aside>
+</section>
+
+<div class="belt" aria-hidden="true">
+  <div class="belt__track">
+    <span>Ноутбуки</span><span>Компьютеры</span><span>Телевизоры и приставки</span><span>Роутеры и VPN</span><span>Принтеры</span><span>Смартфоны</span><span>Windows</span><span>Апгрейд SSD и памяти</span>
+    <span>Ноутбуки</span><span>Компьютеры</span><span>Телевизоры и приставки</span><span>Роутеры и VPN</span><span>Принтеры</span><span>Смартфоны</span><span>Windows</span><span>Апгрейд SSD и памяти</span>
+  </div>
+</div>
+
+<!-- SCENE: день на маршруте -->
+<section class="day" id="day" aria-labelledby="dayH">
+  <div class="day__sticky">
+    <div class="day__copy">
+      <h2 id="dayH">Как проходит один день</h2>
+      <div class="clock" aria-live="polite">
+        <span class="clock__t" id="clockT">10:05</span>
+        <span class="clock__l" id="clockL">Заявка</span>
+      </div>
+      <p class="day__txt" id="dayTxt">Вы оставили заявку или написали. Мастер уточняет, что случилось, и называет ориентир по цене.</p>
+      <ol class="day__steps" id="dayDots" aria-label="Этапы">
+        <li class="on">Заявка</li><li>Выезд</li><li>На месте</li><li>Готово</li>
+      </ol>
+      <p class="day__fine">Время на схеме — пример одного дня.</p>
+    </div>
+    <div class="day__map" aria-hidden="true">
+      <svg viewBox="0 0 800 560" id="mapSvg" role="img" aria-label="Схема маршрута мастера через Калининград">
+        <rect width="800" height="560" fill="#dfeaee"/>
+        <!-- берега и кварталы -->
+        <g fill="#eef3f5">
+          <rect x="30" y="30" width="170" height="120" rx="6"/><rect x="215" y="30" width="150" height="120" rx="6"/>
+          <rect x="30" y="165" width="170" height="90" rx="6"/><rect x="480" y="30" width="140" height="130" rx="6"/>
+          <rect x="635" y="30" width="135" height="130" rx="6"/><rect x="30" y="400" width="190" height="130" rx="6"/>
+          <rect x="235" y="440" width="170" height="90" rx="6"/><rect x="560" y="410" width="210" height="120" rx="6"/>
+          <rect x="420" y="450" width="125" height="80" rx="6"/><rect x="635" y="175" width="135" height="90" rx="6"/>
+        </g>
+        <!-- река -->
+        <path d="M-10 290 C120 250 220 330 340 305 C450 282 520 220 620 250 C700 274 760 300 820 280" fill="none" stroke="#9cc4d4" stroke-width="64" stroke-linecap="round"/>
+        <path d="M-10 290 C120 250 220 330 340 305 C450 282 520 220 620 250 C700 274 760 300 820 280" fill="none" stroke="#b7d6e3" stroke-width="40" stroke-linecap="round"/>
+        <!-- остров -->
+        <ellipse cx="400" cy="297" rx="64" ry="22" fill="#eef3f5" transform="rotate(-8 400 297)"/>
+        <!-- мосты -->
+        <g stroke="#0e2230" stroke-width="5" stroke-linecap="round">
+          <line x1="262" y1="285" x2="262" y2="345"/><line x1="332" y1="270" x2="332" y2="338"/>
+          <line x1="470" y1="248" x2="470" y2="316"/><line x1="540" y1="222" x2="540" y2="290"/>
+          <line x1="610" y1="214" x2="610" y2="286"/><line x1="150" y1="250" x2="150" y2="320"/><line x1="680" y1="236" x2="680" y2="310"/>
+        </g>
+        <!-- маршрут -->
+        <path id="routeBg" d="M70 110 L120 110 L120 215 L262 215 L262 345 L262 400 L420 400 L420 330 L470 330 L470 248 L470 160 L700 160 L700 215 L560 215" fill="none" stroke="#c4d3da" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 14"/>
+        <path id="route" d="M70 110 L120 110 L120 215 L262 215 L262 345 L262 400 L420 400 L420 330 L470 330 L470 248 L470 160 L700 160 L700 215 L560 215" fill="none" stroke="#f4a81d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- точки -->
+        <g>
+          <circle cx="70" cy="110" r="11" fill="#0e2230"/><circle cx="70" cy="110" r="4" fill="#fff"/>
+          <rect x="544" y="199" width="32" height="32" rx="8" fill="#0e2230"/><path d="M552 218 l6 6 l10 -12" fill="none" stroke="#f4a81d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g id="van">
+          <circle r="17" fill="#fff" stroke="#0e2230" stroke-width="4"/>
+          <path d="M-8 3 h16 v-9 h-9 z" fill="#0e2230"/><circle cx="-4" cy="6" r="2.2" fill="#f4a81d"/><circle cx="5" cy="6" r="2.2" fill="#f4a81d"/>
+        </g>
+        <g font-family="Onest,sans-serif" font-size="15" font-weight="600" fill="#0e2230">
+          <text x="30" y="82">Заявка</text>
+          <text x="505" y="196" text-anchor="start">Ваш адрес</text>
+          <text x="312" y="372" fill="#1f5c78">р. Преголя</text>
+          <text x="362" y="272" fill="#5b7a88" font-size="13">остров Канта</text>
+        </g>
+      </svg>
+      <p class="map__cap">Схема, не масштаб: река, остров и мосты узнаваемы, остальное условно.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CALC -->
+<section class="calc" id="calc" aria-labelledby="calcH">
+  <div class="calc__head">
+    <h2 id="calcH">Цена известна до работ</h2>
+    <p class="lead">Отметьте, что нужно. Это цены «от»: точную назовём после осмотра, до начала работ. Не подошла — работу не начинаем.</p>
+  </div>
+  <div class="calc__body">
+    <div class="calc__pick" id="pick" role="group" aria-label="Выберите работы">
+      <button type="button" class="chip" data-p="1000" data-n="Настройка ТВ, приставки, Smart TV"><span>Настройка ТВ, приставки, Smart TV</span><b>от 1 000 ₽</b></button>
+      <button type="button" class="chip" data-p="1000" data-n="Установка Windows и базовых программ"><span>Установка Windows и базовых программ</span><b>от 1 000 ₽</b></button>
+      <button type="button" class="chip" data-p="1500" data-n="Чистка ноутбука и замена термопасты"><span>Чистка ноутбука и замена термопасты</span><b>от 1 500 ₽</b></button>
+      <button type="button" class="chip" data-p="1500" data-n="Настройка роутера и VPN"><span>Настройка роутера и VPN</span><b>от 1 500 ₽</b></button>
+      <button type="button" class="chip" data-p="1000" data-n="Диагностика и мелкий ремонт"><span>Диагностика и мелкий ремонт</span><b>от 1 000 ₽</b></button>
+      <button type="button" class="chip" data-p="2000" data-n="Апгрейд: SSD, оперативная память" data-extra="1"><span>Апгрейд: SSD, оперативная память</span><b>от 2 000 ₽ + комплектующие</b></button>
+      <button type="button" class="chip" data-p="2000" data-n="Комплексная настройка ПК или ноутбука"><span>Комплексная настройка ПК или ноутбука</span><b>от 2 000 ₽</b></button>
+    </div>
+    <div class="receipt" id="receipt" aria-live="polite">
+      <div class="receipt__top">Расчёт на выезд</div>
+      <ul class="receipt__list" id="rList"><li class="empty">Пока ничего не выбрано</li></ul>
+      <div class="receipt__row"><span>Выезд по городу</span><b id="rVisit">—</b></div>
+      <div class="receipt__total"><span>Итого от</span><b id="rTotal">0 ₽</b></div>
+      <p class="receipt__note" id="rNote">Выезд бесплатный, если мы продолжаем работу. Если после осмотра работу не начинаем — выезд 500–1 000 ₽ по ситуации.</p>
+      <a class="btn btn--block" href="#order" id="rGo" data-magnetic>Вызвать мастера</a>
+    </div>
+  </div>
+</section>
+
+<!-- DEVICES -->
+<section class="devices" id="devices" aria-labelledby="devH">
+  <h2 id="devH">Что чиним и настраиваем</h2>
+  <div class="tabs" data-pill role="tablist" aria-label="Тип техники">
+    <button data-pill-item role="tab" data-t="0" class="is-active">Компьютер и ноутбук</button>
+    <button data-pill-item role="tab" data-t="1">Телевизор</button>
+    <button data-pill-item role="tab" data-t="2">Роутер и интернет</button>
+    <button data-pill-item role="tab" data-t="3">Принтер и смартфон</button>
+  </div>
+  <div class="panel" id="panel" role="tabpanel">
+    <div class="panel__col">
+      <h3 id="pTitle">Тормозит, шумит, не включается</h3>
+      <ul id="pList"></ul>
+    </div>
+    <div class="panel__price">
+      <span class="small">Ориентир</span>
+      <b id="pPrice">от 1 000 ₽</b>
+      <p id="pNote"></p>
+      <a class="btn" href="#order" data-magnetic>Описать проблему</a>
+    </div>
+  </div>
+</section>
+
+<!-- DOROGO -->
+<section class="vs" id="vs" aria-labelledby="vsH">
+  <h2 id="vsH">В сервисе дешевле? Сложите всё</h2>
+  <div class="vs__grid">
+    <div class="vs__a" data-reveal>
+      <h3>Если везти технику в сервис</h3>
+      <ul>
+        <li>Дорога туда и обратно</li>
+        <li>Время без компьютера, пока он на ремонте</li>
+        <li>Ваши файлы остаются у других людей</li>
+        <li>Телевизор и роутер туда вообще не повезёшь</li>
+      </ul>
+    </div>
+    <div class="vs__b" data-reveal data-reveal-delay="120">
+      <h3>Если вызвать мастера</h3>
+      <ul>
+        <li>Мастер едет к вам, вы никуда не едете</li>
+        <li>Цену называем до начала работ, без сюрпризов в конце</li>
+        <li>Выезд бесплатный, если продолжаем работу</li>
+        <li>Работаем при вас, оплата сразу после результата</li>
+      </ul>
+      <p class="vs__ask">Спрашиваете «можно ли дешевле?» Скажем честно, что нужно делать, а что можно не трогать.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-labelledby="faqH">
+  <h2 id="faqH">Частые вопросы</h2>
+  <div class="faq__list">
+    <details><summary>Правда в день обращения?</summary><p>Да, выезд в день обращения — наш принцип. Время согласуем по телефону, когда вы оставите заявку.</p></details>
+    <details><summary>Сколько стоит выезд?</summary><p>Если мы продолжаем работу, выезд бесплатный. Если после осмотра работу не начинаем, выезд стоит 500–1 000 ₽, сумму называем заранее.</p></details>
+    <details><summary>Когда оплачивать?</summary><p>Сразу после результата, прямо на месте. Цену называем до начала работ.</p></details>
+    <details><summary>Вы приезжаете в офис?</summary><p>Да, настраиваем компьютеры, принтеры и роутеры в небольших офисах.</p></details>
+    <details><summary>Что если проблему нельзя решить на месте?</summary><p>Скажем об этом после диагностики и предложим варианты, прежде чем что-то делать.</p></details>
+    <details><summary>Вы работаете только в Калининграде?</summary><p>Выезжаем по городу. Если вы за городом, напишите — скажем, сможем ли приехать.</p></details>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="order" id="order" aria-labelledby="orderH">
+  <div class="order__text">
+    <h2 id="orderH">Вызвать мастера сегодня</h2>
+    <p class="lead">Опишите, что случилось, и оставьте телефон. Перезвоним, уточним детали и согласуем время выезда.</p>
+  </div>
+  <form class="form" id="leadForm" novalidate>
+    <label>Имя<input name="name" type="text" autocomplete="name" required placeholder="Как к вам обращаться"></label>
+    <label>Телефон<input name="phone" type="tel" autocomplete="tel" required placeholder="+7 (___) ___-__-__"></label>
+    <label>Что случилось
+      <select name="device">
+        <option>Компьютер или ноутбук</option><option>Телевизор или приставка</option><option>Роутер, Wi-Fi, VPN</option><option>Принтер</option><option>Смартфон</option><option>Другое</option>
+      </select>
+    </label>
+    <label>Коротко о проблеме<textarea name="comment" rows="3" placeholder="Например: ноутбук сильно греется и выключается"></textarea></label>
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <button class="btn btn--block" type="submit" data-magnetic>Вызвать мастера</button>
+    <p class="form__fine">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
+  </form>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot__big" aria-hidden="true">Мастер на выезде</div>
+  <div class="foot__row"><span>Калининград. Ремонт и настройка техники на дому и в офисе.</span><a href="privacy.html">Конфиденциальность</a><span>© <span id="year"></span></span></div>
+</footer>
+
+<script src="motion.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
