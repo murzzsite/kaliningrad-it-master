@@ -16,6 +16,43 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="nerdSym" viewBox="0 0 400 520">
+<circle cx="200" cy="250" r="190" fill="#f4a81d"/>
+<circle cx="316" cy="104" r="22" fill="#fde9bd"/><circle cx="64" cy="170" r="12" fill="#fde9bd"/>
+<rect x="178" y="292" width="44" height="64" rx="10" fill="#d9a67e"/>
+<path d="M60 520 C60 392 118 346 200 346 C282 346 340 392 340 520Z" fill="#1f5c78"/>
+<path d="M200 380 V520" stroke="#17485f" stroke-width="4"/>
+<path d="M166 340 L200 394 L174 400 L146 352Z" fill="#fff"/><path d="M234 340 L200 394 L226 400 L254 352Z" fill="#fff"/>
+<rect x="248" y="424" width="46" height="54" rx="4" fill="#17485f"/>
+<rect x="256" y="406" width="7" height="34" rx="2" fill="#e5484d"/><rect x="268" y="410" width="7" height="30" rx="2" fill="#f4a81d"/><rect x="280" y="404" width="7" height="36" rx="2" fill="#fff"/>
+<path d="M300 394 L352 394 L346 444 L312 444Z" fill="#1f5c78"/>
+<g class="thumb"><circle cx="330" cy="444" r="24" fill="#f2c9a5"/><path d="M322 432 L322 392 Q322 378 335 382 Q344 387 340 404 L340 424Z" fill="#f2c9a5"/></g>
+<g class="nerd__head">
+<circle cx="130" cy="222" r="15" fill="#f2c9a5"/><circle cx="270" cy="222" r="15" fill="#f2c9a5"/>
+<ellipse cx="200" cy="214" rx="70" ry="80" fill="#f2c9a5"/>
+<path d="M128 212 C112 130 168 104 206 108 C256 104 292 140 272 212 C264 176 240 160 206 162 C172 160 140 176 128 212Z" fill="#2b1b14"/>
+<path d="M176 112 C166 86 190 76 198 100Z M214 108 C212 82 238 80 232 110Z M246 120 C264 102 282 112 270 134Z" fill="#2b1b14"/>
+<path d="M146 190 Q168 174 190 186 M214 186 Q236 174 258 190" stroke="#2b1b14" stroke-width="6" stroke-linecap="round" fill="none"/>
+<circle cx="170" cy="216" r="30" fill="#eaf6fa" fill-opacity=".85" stroke="#0e2230" stroke-width="7"/><circle cx="232" cy="216" r="30" fill="#eaf6fa" fill-opacity=".85" stroke="#0e2230" stroke-width="7"/>
+<path d="M198 212 Q201 205 204 212 M140 214 L130 220 M262 214 L272 220" stroke="#0e2230" stroke-width="6" stroke-linecap="round" fill="none"/>
+<circle class="eye" cx="172" cy="218" r="8" fill="#0e2230"/><circle class="eye" cx="234" cy="218" r="8" fill="#0e2230"/>
+<path d="M152 200 l14 -6 M214 200 l14 -6" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<path d="M200 228 Q190 250 203 252" stroke="#c28f6a" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M166 264 Q202 300 238 264 Q202 272 166 264Z" fill="#fff" stroke="#0e2230" stroke-width="4" stroke-linejoin="round"/>
+<path d="M174 270 Q202 284 230 270" stroke="#8b9aa4" stroke-width="3" fill="none"/>
+<circle cx="150" cy="252" r="9" fill="#f0a58c" opacity=".55"/><circle cx="254" cy="252" r="9" fill="#f0a58c" opacity=".55"/>
+<circle cx="164" cy="246" r="1.8" fill="#b9805c"/><circle cx="174" cy="250" r="1.8" fill="#b9805c"/><circle cx="232" cy="250" r="1.8" fill="#b9805c"/><circle cx="242" cy="246" r="1.8" fill="#b9805c"/>
+</g>
+<g transform="rotate(-7 130 440)">
+<rect x="38" y="352" width="176" height="112" rx="9" fill="#0e2230"/><rect x="48" y="362" width="156" height="92" rx="4" fill="#eaf6fa"/><rect x="48" y="362" width="156" height="14" fill="#f4a81d"/>
+<circle cx="126" cy="408" r="21" fill="#f4a81d"/><path d="M116 408 l8 8 l15 -17" stroke="#0e2230" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="70" y="438" width="112" height="7" rx="3.5" fill="#c4d3da"/><rect class="prog" x="70" y="438" width="112" height="7" rx="3.5" fill="#1f5c78"/>
+<rect x="20" y="466" width="212" height="14" rx="7" fill="#b7c4cc"/>
+<circle cx="40" cy="480" r="17" fill="#f2c9a5"/><circle cx="214" cy="476" r="17" fill="#f2c9a5"/>
+</g>
+</symbol></defs></svg>
+
 
 <header class="bar" id="bar">
   <a class="logo" href="#top" aria-label="Мастер по ремонту ПК и ноутбуков">
@@ -42,10 +79,13 @@
       <a class="btn" href="#order" data-magnetic>Вызвать мастера</a>
       <a class="btn btn--ghost" href="#calc" data-magnetic>Посчитать цену</a>
     </div>
-    <p class="hero__note">Звоните: <a href="tel:+79268992959"><b>+7 926 899-29-59</b></a>. Диагностика и мелкий ремонт — от 1 000 ₽, принтеры и смартфоны — от 700 ₽.</p>
+    <p class="hero__note">Звоните: <a href="tel:+79268992959"><b>+7 926 899-29-59</b></a>. Диагностика — от 1 000 ₽.</p>
   </div>
 
-  <aside class="ticket" id="ticket" aria-label="Пример наряда на выезд">
+  <div class="hero__art">
+    <svg class="nerd" viewBox="0 0 400 520" role="img" aria-label="Мастер в очках с ноутбуком, на экране «Готово»"><use href="#nerdSym"/></svg>
+    <p class="bubble">Сейчас всё починим!</p>
+    <aside class="ticket" id="ticket" aria-label="Пример наряда на выезд">
     <div class="ticket__top">
       <b>Наряд на выезд</b>
       <span id="tNo">№ 0412</span>
@@ -59,6 +99,7 @@
     <div class="stamp" id="stamp" aria-hidden="true"><span>Выезд<br>сегодня</span></div>
     <div class="ticket__dots" id="tDots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
   </aside>
+  </div>
 </section>
 
 <div class="belt" aria-hidden="true">
@@ -222,7 +263,8 @@
 <section class="order" id="order" aria-labelledby="orderH">
   <div class="order__text">
     <h2 id="orderH">Вызвать мастера сегодня</h2>
-    <p class="lead">Опишите, что случилось, и оставьте телефон. Перезвоним, уточним детали и согласуем время выезда. Или позвоните сами: <a href="tel:+79268992959"><b>+7 926 899-29-59</b></a>.</p>
+    <p class="lead">Опишите, что случилось, и оставьте телефон. Перезвоним и согласуем время выезда. Или позвоните: <a href="tel:+79268992959"><b>+7 926 899-29-59</b></a>.</p>
+    <svg class="nerd nerd--sm" viewBox="0 0 400 520" aria-hidden="true"><use href="#nerdSym"/></svg>
   </div>
   <form class="form" id="leadForm" novalidate>
     <label>Имя<input name="name" type="text" autocomplete="name" required placeholder="Как к вам обращаться"></label>
